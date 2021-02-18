@@ -15,5 +15,6 @@ obj['drinks'].each do |key|
 	ingredient = Ingredient.new(
 		name: key['strIngredient1']
 		)
+	ingredient.save
 	puts "#{ingredient.name} created"
 end
